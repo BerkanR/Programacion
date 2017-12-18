@@ -27,8 +27,8 @@ def namelist(names):
     return ' &'.join(stringValores.rsplit(',', 1))
 
 
-assert(namelist([])) == '', "Debería funcionar con una lista vacía"
-assert(namelist([{'name': 'Bart'}])) == "Bart", "Error para el formateo de un solo nombre"
-assert(namelist([{'name': 'Bart'},{'name': 'Lisa'}])) == "Bart & Lisa", "Error para el formateo de más de un nombre"
-assert(namelist([{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'}])) == "Bart, Lisa & Maggie", "Error para el formateo de tres nombres"
-assert(namelist([{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}])) == "Bart, Lisa, Maggie, Homer & Marge", "Error para el formateo de más de tres nombres"
+assert (namelist([])) == '', "Debería funcionar con una lista vacía"
+assert (namelist([{'name': 'Bart'}])) == "Bart", "Error para el formateo de un solo nombre"
+assert (namelist([{'name': 'Bart'},{'name': 'Lisa'}])) == "Bart & Lisa", "Error para el formateo de más de un nombre"
+assert (namelist([{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'}])) == "Bart, Lisa & Maggie", "Error para el formateo de tres nombres"
+assert (namelist([{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'},{'name': 'Homer'},{'name': 'Marge'}])) == "Bart, Lisa, Maggie, Homer & Marge", "Error para el formateo de más de tres nombres"
